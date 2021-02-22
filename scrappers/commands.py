@@ -1,6 +1,6 @@
 from events.models import Event
 from movies.models import Movie
-from scrappers.models import CineMunicipalScrapper
+from scrappers.services.cineclub_municipal import CineMunicipalScrapper
 
 
 class Command(object):
@@ -46,8 +46,6 @@ class Command(object):
         for scrapper in self.scrappers:
             events = scrapper().run()
             cinema = scrapper().cinema
-            import ipdb
-            ipdb.set_trace()
             for event in events:
                 movie = self._get_movie(event)
                 if not self._already_exists_event(event, movie, cinema):

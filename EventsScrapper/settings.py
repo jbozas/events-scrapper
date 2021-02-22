@@ -126,3 +126,4 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+T_BOT_TOKEN = "1611907464:AAFGrbZnibGhkwRJhr-A9HoT2FGckuTq7-s"

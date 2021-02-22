@@ -12,3 +12,10 @@ class Movie(models.Model):
     image = models.ImageField(blank=True)
     preview = models.CharField(max_length=200, blank=True)
     trailer = models.CharField(max_length=200, blank=True)
+
+    @property
+    def get_data(self):
+        return {
+            'title': self.title,
+            'image': self.image,
+        }
