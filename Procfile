@@ -1,1 +1,1 @@
-web: gunicorn events-scrapper.wsgi
+web: gunicorn EventsScrapper.wsgi
