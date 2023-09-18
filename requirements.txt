@@ -14,3 +14,4 @@ requests==2.25.1
 Django==4.2.5
 # Deploy
 gunicorn==21.2.0
+whitenoise==6.5.0
