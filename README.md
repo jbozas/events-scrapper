@@ -24,3 +24,8 @@
 - [Technologies 💻](#technologies)
 
 WORK IN PROGRESS.
+
+
+# Deploy
+
+python install -r requirements/requirements.prd
