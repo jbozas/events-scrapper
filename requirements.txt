@@ -12,3 +12,5 @@ bs4==0.0.1
 requests==2.25.1
 # Django
 Django==4.2.5
+# Deploy
+gunicorn==21.2.0
