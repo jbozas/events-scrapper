@@ -17,5 +17,5 @@ class Movie(models.Model):
     def get_data(self):
         return {
             'title': self.title,
-            'image': self.image,
+            'image': self.image.url,
         }

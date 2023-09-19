@@ -15,8 +15,10 @@ class Event(models.Model):
     @property
     def get_data(self):
         return {
+            'id': self.pk,
             'movie': self.movie.get_data,
-            'datetime': self.datetime
+            'datetime': self.datetime,
+            'cinema': self.cinema.name
         }
 
     @property
